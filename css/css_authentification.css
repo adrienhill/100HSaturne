@@ -1,0 +1,28 @@
+h2,input{
+	margin-top:15px;
+	text-align: center;
+}
+
+form{
+	margin-top: 25%;
+}
+
+#logo{
+	margin: 25%;
+	width:50%;
+}
+
+#bg{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+a{
+	float: right;
+	color: orange;
+	margin-top: 10%;
+}

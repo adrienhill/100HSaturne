@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="../css/bootstrap.min.css" rel="stylesheet">
+    	<title>Administration Saturne</title>
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/css_parametrescompte.css"> 
+
+    </head>
+
+    <body>
+    
+    	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="container">
+                <div class="navbar-header">
+
+        	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
+            	   <span class="sr-only">Toggle navigation</span>
+            	   <span class="icon-bar"></span>
+            	   <span class="icon-bar"></span>
+            	   <span class="icon-bar"></span>
+        	    </button> 
+
+        	    <a class="navbar-brand">Administration Saturne HEI</a>
+
+                </div>
+
+                <div class="navbar-collapse collapse">
+        	       <ul class="nav navbar-nav navbar-right">
+        		      <li><a href="administration-gestionsite.html"><span class="glyphicon glyphicon-globe"></span> Paramétrage site</a></li>
+            	       <li><a href="administration-gestionvideos.html"><span class="glyphicon glyphicon-film"></span> Gestion Vidéos</a></li>
+            	       <li><a href="administration-gestionevenements.html"><span class="glyphicon glyphicon-th"></span> Gestion Évènements</a></li>
+            	       <li class="dropdown active">
+              		        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              		        <span class="glyphicon glyphicon-user"></span> Compte</a>
+                		      <ul class="dropdown-menu">
+                  			   <li><a>Paramètres</a></li>
+                  			   <li><a href="#">Déconnexion</a></li>
+                		      </ul>
+            	       </li>            
+        	       </ul>
+                </div>
+
+            </div>
+    	</div>
+
+         <div class="container">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-wrench" style="font-size:80%"></span></div>
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-4">Paramètres</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div id="pnl" class="panel-heading">
+                 Modifier mot de passe 
+                </div>
+                <div class="panel panel-body">
+                    <form class="form-signin" action="#" method="POST">
+                        <label for="oldpasswordEtudiant">Ancien mot de passe:</label>
+                            <input type="password" name="oldpassword" id="oldpasswordEtudiant" class="form-control" required autofocus/>
+                        <label for="newpasswordEtudiant">Nouveau mot de passe :</label>
+                            <input type="password" name="newpassword" id="newpassewordEtudiant" class="form-control" required/>
+                        <label for="confirmernewpasswordEtudiant">Confirmer nouveau mot de passe :</label>
+                            <input type="password" name="confnewpassword" id="confirmernewpassewordEtudiant" class="form-control" required/>
+                        <input type="submit" style="margin-top: 20px" class="btn btn-lg btn-primary btn-block" value="Valider">
+                    </form>
+                </div>
+            </div>
+
+            </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
